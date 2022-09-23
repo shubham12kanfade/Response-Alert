@@ -1,0 +1,144 @@
+<div class="px-4 py-4">
+  <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+    <ol class="breadcrumb bread_tg">
+      <li class="breadcrumb-item"><a href="#">Roles & Permissions</a></li>
+      <!-- <li class="breadcrumb-item active" aria-current="page">Library</li> -->
+    </ol>
+  </nav>
+  <div class="device_">
+    <div class="row mt-4">
+      <div class="col-md-7">
+        <div class="search">
+          <i class="fa fa-search"></i>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search alarm by type, device name, customer name"
+          />
+        </div>
+      </div>
+      <div class="col-md-5 d-flex justify-content-between flt_del">
+        <div class="del-fl">
+          <i class="fas fa-trash-alt"></i>
+        </div>
+        <a routerLink="/create-new-role"> + Create New Role</a>
+      </div>
+    </div>
+    <div class="mt-4">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">
+              <label class="customcheckbox m-b-20">
+                <input type="checkbox" id="mainCheckbox" />
+                <span class="checkmark"></span>
+              </label>
+            </th>
+            <th scope="col">Role</th>
+            <th scope="col">Users</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="device_tb">
+            <th class="ctr" scope="row">
+              <label class="customcheckbox m-b-20">
+                <input type="checkbox" id="mainCheckbox" />
+                <span class="checkmark"></span>
+              </label>
+            </th>
+            <td class="ctr">Admin</td>
+            <td class="ctr">10</td>
+            <td>
+              <div class="dropdown">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  ...
+                </button>
+                <ul class="dropdown-menu">
+                  <li class="view_drp">
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-eye"></i> View</a
+                    >
+                  </li>
+                  <li class="view_drp">
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-edit"></i> Edit</a
+                    >
+                  </li>
+                  <li class="view_drp">
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-trash-alt"></i> Delete</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr class="device_tb">
+            <th class="ctr" scope="row">
+              <label class="customcheckbox m-b-20">
+                <input type="checkbox" id="mainCheckbox" />
+                <span class="checkmark"></span>
+              </label>
+            </th>
+            <td class="ctr">Sub-Admin</td>
+            <td class="ctr">2</td>
+            <td>
+              <div class="dropdown">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  ...
+                </button>
+                <ul class="dropdown-menu">
+                  <li class="view_drp">
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-eye"></i> View</a
+                    >
+                  </li>
+                  <li class="view_drp">
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-edit"></i> Edit</a
+                    >
+                  </li>
+                  <li class="view_drp">
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-trash-alt"></i> Delete</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-end">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true"><i class="fas fa-angle-left"></i></span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item"><a class="page-link" href="#">5</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true"><i class="fas fa-angle-right"></i></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>

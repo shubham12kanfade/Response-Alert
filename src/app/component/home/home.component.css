@@ -1,0 +1,44 @@
+.home{background-color: rgb(247 247 247);}
+.row{width: 100%;}
+.crd_bx{height: 6rem;margin-right: 2rem;margin-bottom: 1rem;}
+/* box icon */
+.box1 svg{    color: #6CA3CC;background-color: #E4F4FF;width: 36px;padding: 9px 8px;
+    height: 2.5rem !important;border-radius: 5px; margin-right: 1rem;}
+    .box2 svg{    color: #00FF59;background-color: #E8FFF0;width: 36px;padding: 9px 8px;
+        height: 2.5rem !important;border-radius: 5px; margin-right: 1rem;}
+        .box3 svg{    color: #F66B00;background-color: #FFF2E8;width: 36px;padding: 9px 8px;
+            height: 2.5rem !important;border-radius: 5px; margin-right: 1rem;}
+            .box4 svg{    color: #FF009B;background-color:#FFE8F6;width: 36px;padding: 9px 8px;
+                height: 2.5rem !important;border-radius: 5px; margin-right: 1rem;}    
+
+    /*box  icon  */
+.crd_inr{padding: 30px 23px;}
+.unit_dy span{background-color: #EDF4F9;padding: 5px 7px;font-size: 13px;border-radius: 5px;}
+.card{border: none;}
+.bread_tg a{text-decoration: none; color: #000; border: none;}
+/* search */
+.search{position: relative;border: none;  }
+.search input{border: none;text-indent: 25px;/* border: 1px solid #d6d4d4; */background-color: #f1f1f1;font-size: 13px;
+}
+.search .fa-search{position: absolute;top: 9px;left: 16px;}
+/* search */
+.over_ly::-webkit-scrollbar {width: 0.3em;border-radius: 20px;}
+.over_ly::-webkit-scrollbar-track {-webkit-box-shadow: inset 0 0 3px rgba(211, 209, 209, 0.3);}
+.over_ly::-webkit-scrollbar-thumb {background-color: rgb(204, 203, 201);outline: 1px solid rgb(204, 203, 201);
+border-radius: 1px;}
+.cust_al:hover{background-color:#F4FAFF;}
+.cust_al:active{background-color:#F4FAFF;}
+
+    .over_ly{overflow: scroll;overflow-x: hidden;overflow-y: scroll;}
+    .alrm_1{position: relative;padding: 10px 24px;}
+    .alrm_2{position: relative;}
+    .alrm- p{font-size: 14px;margin: 0 0 3px !important;}
+    .alrm- p span{color: #c4c4c4;}
+    .alrm_1 svg{    color: #FF0000;background-color: #FFE9E9;border-radius: 50%;padding: 9px 10px;height: 40px !important;
+        width: 40px !important;}
+        .alrm_2{ color: #fff;   background-color: #FF0000;border-radius: 50%;padding: 2px 5px;height: 20px !important;width: 20px !important;}
+    .crd-alrm{border: 1px solid #f78880 !important; border-radius: 5px;}
+    .custm_im img{width: 40px;height: 40px;position: relative;margin: 9px 7px;}
+    .custm_txt{line-height: 1px;}
+    .custm_txt h1{font-size: 16px; margin: 0 0 5px !important;}
+    .custm_txt p{color: #b3b2ae;font-size: 13px;}

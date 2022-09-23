@@ -1,0 +1,24 @@
+a{text-decoration: none; color: #000; border: none;}
+.device_{padding: 14px 18px;border-radius: 10px;margin-right: 4.7rem;}
+.search{position: relative;border: none;  }
+.search input{border: none;text-indent: 25px;/* border: 1px solid #d6d4d4; */background-color: #fff;font-size: 13px;
+}
+.search .fa-search{position: absolute;top: 10px;left: 10px}
+/* search */
+.del-fl svg{width: 2rem !important;
+    height: 2rem !important;
+    background-color: #fff !important;
+    padding: 4px 7px;
+    margin-right: 5px;
+}
+.row{width: 100%;}
+.prod_crd:hover{box-shadow: rgb(49 199 236 / 18%) 4.4px 4.4px 3.2px;}
+.prod_crd img{padding: 1rem 1rem;} 
+.prod_crd h5{font-size: 20px;font-weight: 500;}
+.prod_crd p{font-size: 16px;color: #a9a9a9;font-weight: 300;}
+.prod_crd h6{font-size: 20px; font-weight: 500;}
+.prod_buy svg{height: 39px;background-color: #E9F5FF;width: 44px;padding: 10px 0px;color: #6CA3CC;border-radius: 5px 0px;}
+
+
+    
+    

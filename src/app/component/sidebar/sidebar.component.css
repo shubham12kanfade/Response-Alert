@@ -1,0 +1,35 @@
+.logo img{    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+.mat-icon{vertical-align: center;
+margin-right: 1rem;}
+.side_ctr{margin: 0px 20px;}
+.side_ctr svg{margin: 0px 10px;}
+.mat-list-item{
+    color: #000;
+    font-size: 0.9rem;
+    height: 44px !important;
+     margin-bottom: 4px;
+     border-radius: 5px;
+
+}
+
+
+.mat-list-item:hover{
+
+    background-color: #103759;
+    color: #fff !important;
+}
+.mat-list-item:active{
+
+    background-color: #103759;
+    color: #fff !important;
+}
+
+.mat-subheader{
+    color: #818cf8;
+    font-size: 0.6rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+}

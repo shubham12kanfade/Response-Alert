@@ -1,0 +1,15 @@
+.sign_logo img{ width: 30%;}
+.sign_head h1{display: flex; margin: auto; justify-content: center;}
+.sign_head p{display: flex; margin: auto; justify-content: center;}
+.login_btn button{text-decoration: none;background-color: #103759;border: none;color: #fff;
+    border-radius: 4px;width: 100%;padding: 7px 0px;}
+.login_sn{padding: 0rem 11rem;}
+.left_side{background-color:#103759;height: 100vh;padding-left: 0px;}
+.leftside_img img{width: 80%;margin: 7rem 2.4rem;}
+.leftside1_img{margin-left: 1px;margin-right: -10px;}
+.leftside1_img img{width: 100%;}
+.sign_up a{color: #103759;font-weight: 700;}
+.sign_up1 a{color: #103759;}
+.login_txt{padding: 9rem 0px;}
+.input_icon svg{position: absolute;margin: 0.5rem 0.8rem;height: 1.2rem;width: 0.9rem}
+.input_icon input{padding: 0.3rem 3rem;font-size: 1rem;font-weight: 400;line-height: 1.8;}
