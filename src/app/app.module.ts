@@ -17,6 +17,8 @@ import {MatStepperModule} from '@angular/material/stepper';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatButtonModule} from '@angular/material/button';
+import {MatRadioModule} from '@angular/material/radio';
+
 
 
 
@@ -58,8 +60,9 @@ import { ForgetPasswordComponent } from './forget-password/forget-password.compo
     ReactiveFormsModule,
     MatInputModule,
     MatFormFieldModule,
-    MatButtonModule
-
+    MatButtonModule,
+    MatRadioModule
+,
   ],
   providers: [],
   bootstrap: [AppComponent]
