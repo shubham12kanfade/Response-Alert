@@ -10,175 +10,210 @@
              </div>
             </div>
             <div class="col-md-9">
-                <div class=" container login_txt">  
-                    <div class="sign_head">
-                        <h1>Sign Up</h1>
-                        <p>please login  to access your account</p>
+                <div class=" container login_txt"> 
+                    <div class="sign_head mt-4 mb-3" *ngIf="!productSelected">
+                        <h1 class="fw-bold">Sign Up</h1>
+                        <p class="mt-2">Please enter your details to set up your account</p>
+                    </div>
+                    <div class="image-upload-wrap d-flex mr-auto justify-content-center" *ngIf="!productSelected">
+                        <div class="text-center">
+                            <input type="file" class="form-control file-upload-input"id="exampleFormControlInput1">
+                            <!-- <img id="blah" [src]="imageSrc || 'http://placehold.it/180'" alt="your image" /> -->
+                            <i class="fas fa-upload mt-2"></i><p>Upload Logo (file size should be upto 5-10 MB, dimension- 800/400px)</p>
+                        </div>
                     </div>
                     <div class="">
                           <mat-stepper linear #stepper>
-                            <mat-step [stepControl]="firstFormGroup" [editable]="isEditable">
+                            <mat-step  class="step_one"  [stepControl]="firstFormGroup" [editable]="isEditable">
                               <form [formGroup]="firstFormGroup">
                                 <ng-template matStepLabel>Fill out your name</ng-template>
                                 <div class="login_sn">
                                     <div class="mb-3">
                                         <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
                                         <div class="input_icon">
-                                            <i class="fas fa-city"></i>
-                                            <input type="text" class="form-control"formControlName="firstCtrl" id="exampleFormControlInput1" placeholder="Company name">
+                                            <i class="fas fa-user"></i>
+                                            <input type="text" class="form-control"formControlName="userName" id="exampleFormControlInput1" placeholder="user name">
                                         </div>
                                     </div>
                                     <div class="mb-3">
                                         <!-- <label for="inputPassword" class="form-label">password</label> -->
                                         <div class="input_icon">
                                             <i class="fas fa-unlock-alt icon"></i>
-                                            <input type="email" class="form-control input-field"formControlName="firstCtrl" id="inputPassword" placeholder="email">
+                                            <input type="email" class="form-control input-field"formControlName="emaiId" id="inputPassword" placeholder="email">
                                         </div>
                                     </div>
                                     <div class="mb-3">
                                         <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
                                         <div class="input_icon">
                                             <i class="fas fa-phone-alt"></i>
-                                            <input type="email" class="form-control"formControlName="firstCtrl" id="exampleFormControlInput1" placeholder="phone no">
+                                            <input type="email" class="form-control"formControlName="phoneName" id="exampleFormControlInput1" placeholder="phone no">
                                         </div>
                                     </div>
                                     <div class="mb-3">
                                         <!-- <label for="inputPassword" class="form-label">password</label> -->
                                         <div class="input_icon">
                                             <i class="fas fa-map-marker-alt"></i>
-                                            <input type="text" class="form-control input-field"formControlName="firstCtrl" id="inputPassword" placeholder="address">
+                                            <input type="text" class="form-control input-field"formControlName="addressName" id="inputPassword" placeholder="address">
                                         </div>
                                     </div>
-                                </div>  
-                                <div>
-                                  <button mat-button matStepperNext>Save & Next</button>
+                                    <div class="mb-3">
+                                        <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+                                        <div class="input_icon">
+                                            <i class="fas fa-unlock-alt icon"></i>
+                                            <input type="password" class="form-control input-field"formControlName="passwordName" id="exampleFormControlInput1" placeholder="create password">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <!-- <label for="inputPassword" class="form-label">password</label> -->
+                                        <div class="input_icon">
+                                            <i class="fas fa-unlock-alt icon"></i>
+                                            <input type="password" class="form-control input-field"formControlName="confirmPassword" id="inputPassword" placeholder="confirm password ">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="login_btn d-flex mr-auto justify-content-center">
+                                    <button class=""  mat-button matStepperNext>Save & Next <i class="fas fa-angle-double-right"></i></button>
+                                </div>
+                                <div class="mt-4">
+                                    <p class="d-flex mr-auto justify-content-center">Alredy have an account? 
+                                     <span class="sign_up"><div routerLink="/home" routerLinkActive="list-item-active">Login</div></span></p>
                                 </div>
                               </form>
                             </mat-step>
                             <mat-step [stepControl]="secondFormGroup" [editable]="isEditable">
                               <form [formGroup]="secondFormGroup">
                                 <ng-template matStepLabel>Fill out your address</ng-template>
-                                <div class="sencrd mt-2">
-                                    <!-- <div class="">
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio"formControlName="secondCtrl" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                            <label class="form-check-label" for="inlineRadio1">1</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio"formControlName="secondCtrl" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                            <label class="form-check-label" for="inlineRadio2">2</label>
-                                        </div>
-                                    </div> -->
-                                    <div class="d-flex mr-auto justify-content-center mt-4">
-                                        <img src="../../assets/images/card1.png" class="me-2">
-                                        <img src="../../assets/images/card2.png" class="me-2">
-                                        <img src="../../assets/images/card3.png">
-                                    </div>
-                                    <div class="card_dt mt-2">
+                                <div class="login_sn">
+                                    <div class="mb-3">
+                                        <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
                                         <div class="input_icon">
-                                            <input type="text" class="form-control"formControlName="secondCtrl" id="exampleFormControlInput1" placeholder="Cardholder Name*">
-                                        </div>
-                                        <div class="input_icon mt-2">
-                                            <input type="text" class="form-control"formControlName="secondCtrl" id="exampleFormControlInput1" placeholder="Card Number*">
-                                        </div>
-                                        <div class="row mt-2">
-                                            <div class="col-md-6">
-                                                <div class="input_icon">
-                                                    <input type="date" class="form-control"formControlName="secondCtrl" id="exampleFormControlInput1" placeholder="Card Number">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="input_icon">
-                                                    <input type="text" class="form-control"formControlName="secondCtrl" id="exampleFormControlInput1" placeholder="cvv*">
-                                                </div>
-                                            </div>
+                                            <i class="fas fa-city"></i>
+                                            <input type="text" class="form-control"formControlName="secondCtrl" id="exampleFormControlInput1" placeholder="Company name">
                                         </div>
                                     </div>
-                                </div>
-                                <div>
-                                  <button mat-button matStepperPrevious>Back</button>
-                                  <button mat-button matStepperNext>Next</button>
+                                    <div class="mb-3">
+                                        <!-- <label for="inputPassword" class="form-label">password</label> -->
+                                        <div class="input_icon">
+                                            <i class="fas fa-unlock-alt icon"></i>
+                                            <input type="email" class="form-control input-field"formControlName="secondCtrl" id="inputPassword" placeholder="email">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+                                        <div class="input_icon">
+                                            <i class="fas fa-phone-alt"></i>
+                                            <input type="email" class="form-control"formControlName="secondCtrl" id="exampleFormControlInput1" placeholder="phone no">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <!-- <label for="inputPassword" class="form-label">password</label> -->
+                                        <div class="input_icon">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <input type="text" class="form-control input-field"formControlName="secondCtrl" id="inputPassword" placeholder="address">
+                                        </div>
+                                    </div>
+                                </div>  
+                                <div class="d-flex mr-auto justify-content-center">
+                                    <button class="prev_Btn" mat-button matStepperPrevious><i class="fas fa-angle-double-left"></i>  Previous</button>
+                                    <button class="sec_btn" mat-button matStepperNext>Save & Next <i class="fas fa-angle-double-right"></i></button>
+                                  </div>
+                                  <div class="mt-4">
+                                    <p class="d-flex mr-auto justify-content-center">Alredy have an account? 
+                                     <span class="sign_up"><div routerLink="/home" routerLinkActive="list-item-active">Login</div></span></p>
                                 </div>
                               </form>
                             </mat-step>
                             <mat-step>
                               <ng-template matStepLabel>Done</ng-template>
-                              
-                              <div class=" container login_txt">
-                                <div class="sign_logo d-flex mr-auto justify-content-center">
-                                    <img src="../../assets/images/logo.png" width="100">
+                              <div *ngIf="!productSelected">
+                                <div class=" mt-2" *ngIf="!productSelected">
+                                    <div class="d-flex mr-auto justify-content-center">
+                                        <p class="fw-bold me-4">Select Payment Method</p>
+                                        <div class="form-check form-check-inline me-4">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                            <label class="form-check-label" for="inlineRadio1">
+                                                <i class="far fa-credit-card"></i>Debit/Credit Card</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                            <label class="form-check-label" for="inlineRadio2">
+                                                <i class="fas fa-university"></i>Bank Details</label>
+                                        </div>
+                                    </div>
+                                    <div class="sencrd">
+                                        <div class="d-flex mr-auto justify-content-center mt-4">
+                                            <img src="../../assets/images/card1.png" class="me-2">
+                                            <img src="../../assets/images/card2.png" class="me-2">
+                                            <img src="../../assets/images/card3.png">
+                                        </div>
+                                        <div class="card_dt mt-2">
+                                            <div class="input_icon">
+                                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Cardholder Name*">
+                                            </div>
+                                            <div class="input_icon mt-2">
+                                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Card Number*">
+                                            </div>
+                                            <div class="row mt-2">
+                                                <div class="col-md-6">
+                                                    <div class="input_icon">
+                                                        <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="Card Number">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="input_icon">
+                                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="cvv*">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                        
+                                  <div class="d-flex mr-auto justify-content-center mt-4"> 
+                                    <button mat-button matStepperPrevious><i class="fas fa-angle-double-left"></i>Previous</button>
+                                    <button  class="sav_btn" mat-button matStepperPrevious (click)= "onSelectProduct('') ">Save</button>
+                                    <button  mat-button (click)="stepper.reset()"> Skip & Save</button>
+                                  </div>
+                                  <div class="mt-4">
+                                    <p class="d-flex mr-auto justify-content-center">Alredy have an account? 
+                                     <span class="sign_up"><div routerLink="/home" routerLinkActive="list-item-active">Login</div></span></p>
                                 </div>
-                                <div class="sign_head mt-4 mb-3">
-                                    <h1>You’re all signed up!</h1>
-                                    <p class="mt-2">Please check your email for the confirmation message<br>we just sent you</p>
+                              </div>
+                              <div *ngIf="productSelected">
+                                <div class=" container login_txt">
+                                    <div class="check_log d-flex mr-auto justify-content-center">
+                                        <i class="far fa-list-alt"></i>
+                                    </div>
+                                    <div class="login_check d-flex mr-auto justify-content-center">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <div class="sign_head mt-4 mb-3">
+                                        <h1 class="fw-bold">You’re all signed up!</h1>
+                                        <p class="mt-2 text-center">Please check your email for the confirmation message<br>we just sent you</p>
+                                    </div>
+                                    <div class="login_btn d-flex justify-content-center mr-auto">
+                                        <button type="button" class="">Proceed to Login</button>
+                                    </div>
+                                  
                                 </div>
-                                <div class="login_btn d-flex justify-content-center mr-auto">
-                                    <button type="button" class="">Proceed to Login</button>
-                                </div>
-                            </div>
-                              <div>
-                                <button mat-button matStepperPrevious>Back</button>
-                                <button mat-button (click)="stepper.reset()">Reset</button>
                               </div>
                             </mat-step>
-                          </mat-stepper>
-                          
+                          </mat-stepper>   
+
 
                     </div>
-                    <div class="login_sn">
-                        <div class="mb-3">
-                            <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
-                            <div class="input_icon">
-                                <i class="fas fa-user"></i>
-                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="user name">
-                            </div>
+                    <!-- <div class=" container login_txt">
+                        <div class="sign_logo d-flex mr-auto justify-content-center">
+                            <img src="../../assets/images/logo.png" width="100">
                         </div>
-                        <div class="mb-3">
-                            <!-- <label for="inputPassword" class="form-label">password</label> -->
-                            <div class="input_icon">
-                                <i class="fas fa-unlock-alt icon"></i>
-                                <input type="email" class="form-control input-field" id="inputPassword" placeholder="email">
-                            </div>
+                        <div class="sign_head mt-4 mb-3">
+                            <h1>You’re all signed up!</h1>
+                            <p class="mt-2">Please check your email for the confirmation message<br>we just sent you</p>
                         </div>
-                        <div class="mb-3">
-                            <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
-                            <div class="input_icon">
-                                <i class="fas fa-phone-alt"></i>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="phone no">
-                            </div>
+                        <div class="login_btn d-flex justify-content-center mr-auto">
+                            <button type="button" class="">Proceed to Login</button>
                         </div>
-                        <div class="mb-3">
-                            <!-- <label for="inputPassword" class="form-label">password</label> -->
-                            <div class="input_icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <input type="text" class="form-control input-field" id="inputPassword" placeholder="address">
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
-                            <div class="input_icon">
-                                <i class="fas fa-unlock-alt icon"></i>
-                                <input type="password" class="form-control input-field" id="exampleFormControlInput1" placeholder="create password">
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <!-- <label for="inputPassword" class="form-label">password</label> -->
-                            <div class="input_icon">
-                                <i class="fas fa-unlock-alt icon"></i>
-                                <input type="password" class="form-control input-field" id="inputPassword" placeholder="confirm password ">
-                            </div>
-                        </div>
-                        <div class="sign_up1">
-                            <a class="d-flex mr-auto justify-content-end">forget password?</a>
-                        </div>
-                        <div class="login_btn d-flex mr-auto justify-content-center">
-                            <button type="button" class="">Save & Next   <i class="fas fa-angle-double-right"></i></button>
-                        </div>
-                    </div>
-                    <div class="mt-4">
-                        <p class="d-flex mr-auto justify-content-center">Alredy have an account? 
-                         <span class="sign_up"><div routerLink="/home" routerLinkActive="list-item-active">Login</div></span></p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

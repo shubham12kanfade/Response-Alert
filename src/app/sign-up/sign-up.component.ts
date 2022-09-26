@@ -18,6 +18,8 @@ export class SignUpComponent implements OnInit  {
   firstFormGroup:FormGroup=new FormGroup({})
   secondFormGroup:FormGroup=new FormGroup({})
   isEditable = false;
+  imageSrc: string = "";
+
 
   constructor(private _formBuilder: FormBuilder ) { 
     
@@ -27,15 +29,46 @@ export class SignUpComponent implements OnInit  {
   ngOnInit(): void {
 
     this.firstFormGroup = this._formBuilder.group({
-      firstCtrl: ['', Validators.required],
+      userName: ['', Validators.required],
+      emaiId: ['', Validators.required],
+      phoneName: ['', Validators.required],
+      addressName: ['', Validators.required],
+      passwordName: ['', Validators.required],
+      confirmPassword: ['', Validators.required],
     });
 
     
   this.secondFormGroup = this._formBuilder.group({
     secondCtrl: ['', Validators.required],
+    // emailSecond: ['', Validators.required],
+    // phoneCall: ['', Validators.required],
+    // custAddress: ['', Validators.required],
+    
+
 
   });
 
   }
+
+  productSelected:boolean = false;
+
+  onSelectProduct(product:any){
+    this.productSelected = true;
+
+  }
+
+  
+
+
+//   readURL(event: Event): void {
+//     if ((e.target as HTMLInputElement).files && event.target!.files[0]) {
+//         const file = event.target.files[0];
+
+//         const reader = new FileReader();
+//         reader.onload = e => this.imageSrc = reader.result;
+
+//         reader.readAsDataURL(file);
+//     }
+// }
 
 }
