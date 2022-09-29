@@ -24,8 +24,6 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { CreateNewRoleComponent } from './create-new-role/create-new-role.component';
 
-
-
 @NgModule({
   declarations: [
     ComponentComponent,
@@ -40,20 +38,20 @@ import { CreateNewRoleComponent } from './create-new-role/create-new-role.compon
     StaffManagementComponent,
     ProductsComponent,
     InventoryManagmentComponent,
-    CreateNewRoleComponent
+    CreateNewRoleComponent,
   ],
   imports: [
     CommonModule,
     ComponentRoutingModule,
-      // MATERIAL IMPORTS
-      MatSidenavModule,
-      MatToolbarModule,
-      MatMenuModule,
-      MatIconModule,
-      MatDividerModule,
-      MatListModule,
-      MatSelectModule,
-      MatTabsModule,
-  ]
+    // MATERIAL IMPORTS
+    MatSidenavModule,
+    MatToolbarModule,
+    MatMenuModule,
+    MatIconModule,
+    MatDividerModule,
+    MatListModule,
+    MatSelectModule,
+    MatTabsModule,
+  ],
 })
-export class ComponentModule { }
+export class ComponentModule {}
