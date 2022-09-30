@@ -1,0 +1,150 @@
+<div class="activ">
+  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb bread_tg">
+        <li class="breadcrumb-item"><a href="#" class="pe-2">Active Device & Customers Managemnt</a></li><i class="fas fa-angle-double-right"></i>
+        <li class="breadcrumb-item  active" aria-current="page"  class="ps-2"><a class="act_crum">Alina Cooper</a></li>
+      </ol>
+  </nav>
+  <div class="">
+    <div class="card add_c">
+      <div class="hr">
+        <h5>Customer Basic Details</h5>
+        <div class="image-upload-wrap">
+          <div class="">
+              <input type="file" class="form-control file-upload-input"id="exampleFormControlInput1">
+              <!-- <img id="blah" [src]="imageSrc || 'http://placehold.it/180'" alt="your image" /> -->
+              <i class="fas fa-upload mt-2"></i>
+          </div>
+        </div>
+        <p>Upload Image</p>
+      </div>
+      <div class="form  mt-4">
+        <div class="row">
+            <div class="col-md-6">
+              <div class="mb-3">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Customer Name">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="mb-3">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+              </div>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="mb-3">
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Phone No">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-3">
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Call Center No">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="mb-3">
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Address">
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <h5>Emergency Contact Details<span class="option">(You can add maximum 2 emergency contacts)</span></h5>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="mb-3">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Contact Name">
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="mb-3">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Phone no">
+              </div>
+            </div>
+            <div class="col-md-1 add_ic"><i class="fas fa-plus-circle"></i></div>
+        </div>
+        </div>
+        <div class="">
+          <h5>Medical History<span class="option">(Optional)</span></h5>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="mb-3">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Blood Group">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Height (CM)">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Weight (KG)">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+          <div class="col-md-6">
+            <div class="mb-3">
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Age">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-3">
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Illness">
+            </div>
+          </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="mb-3">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Blood Group">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <h5>Assign Device</h5>
+          <div class="image-upload-wrap2">
+            <div class="">
+                <input type="file" class="form-control file-upload-input"id="exampleFormControlInput1">
+                <!-- <img id="blah" [src]="imageSrc || 'http://placehold.it/180'" alt="your image" /> -->
+                <i class="fas fa-upload mt-2"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 sel">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Iris SOS Device</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="97665566788883">
+            </div>
+          </div>
+        </div>
+        <div class="btn_con">
+            <!-- Button trigger modal -->
+          <button type="button" class="conf mb-2" (click)="open()">
+            Configure Device
+          </button>
+          <button class="ass_mr mb-2">+Assign More Device</button>
+          <button class="add_p"(click)="add()" >Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 

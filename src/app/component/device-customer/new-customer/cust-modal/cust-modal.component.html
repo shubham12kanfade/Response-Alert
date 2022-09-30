@@ -1,0 +1,133 @@
+<div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header ">
+        <h5 class="modal-title conf" id="staticBackdropLabel">Configure Device</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6 spc_p">
+            <div class="mb-3">
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="192.0.2.1">
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="905656727">
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="+1 8098755772">
+            </div>
+            <div class="">
+              <div class="mb-3 d-flex red_d">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="+1 905656727">
+                <i class="fas fa-minus-circle"></i>
+              </div>
+            </div>
+            <div class="">
+              <div class="mb-3 d-flex red_d">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="+1 905656727">
+                <i class="fas fa-minus-circle"></i>
+              </div>
+            </div>
+            <p class="you">You can add upt0 5 contact No</p>
+            <div class="d-flex">
+              <h5 class="me-4">Fall Detect</h5>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+              </div>
+            </div>
+            <div class=" me-4">
+                <h5>Fall Detect Sensitivity</h5>
+                <div class="">
+                  <ngx-slider
+            [(value)]="value"
+            [(highValue)]="highValue"
+            [options]="options"
+          ></ngx-slider>
+              </div>
+            </div>
+
+            <div class="d-flex">
+                <h5 class="me-4">Power</h5>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                  <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                </div>
+            </div>
+              <div class="d-flex">
+                <h5>Volume<i class="fas fa-volume-up"></i></h5>
+                <div class="range-slider overlay d-flex" style='--min:0; --max:10; --value-a:2; --value-b:5; --text-value-a:"2"; --text-value-b:"5";'>
+                  <input type="range" class="pro_br" min="0" max="10" value="2" oninput="this.parentNode.style.setProperty('--value-a',this.value); this.parentNode.style.setProperty('--text-value-a', JSON.stringify(this.value))">
+                  <div class='range-slider__values ms-4'>0</div>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-6 hr_md spc_p">
+            <div class="hr_de">
+              <div class="d-flex">
+                <h5 class="me-3">GPS Location</h5>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                    <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                </div>
+              </div>
+              <div class="">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Seconds
+                    </label>
+                </div>
+              </div>
+            </div>
+            <div class="hr_de">
+              <div class="d-flex">
+                <h5 class="me-4">Wifi</h5>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                    <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                </div>
+              </div>
+              <div class="d-flex">
+                <i class="fas fa-wifi"></i>
+                <div>
+                  <p class="ms-2 me-4">Router Name<br><span class="cont">Connected</span></p>
+                  
+                </div>
+                <div class="d-flex ms-4">
+                  <i class="fas fa-pen"></i>
+                  <p>Edit</p>
+                </div>
+              </div>
+            </div>    
+            <h5>APN Settings</h5>
+            <div class="d-flex chec_k">
+              <p class="me-4 "><i class="fas fa-check"></i>AT&T</p>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+              </div>
+            </div>
+            <button class="create">+ Create New APN</button>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="PLMN No">
+                </div>
+              </div>
+            </div>
+            <button class="cr_sav">Create & Save</button>
+          </div>
+      
+        
+      </div>
+      <div class="mo_footer d-flex mr-auto justify-content-center">
+        <button type="button" class=" updt">Update & Save</button>
+      </div>
+    </div>
+</div>

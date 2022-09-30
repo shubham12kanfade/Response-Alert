@@ -1,4 +1,6 @@
+import { Options } from '@angular-slider/ngx-slider';
 import { Component, OnInit } from '@angular/core';
+import { NgxSliderModule } from '@angular-slider/ngx-slider';
 
 @Component({
   selector: 'app-home',
@@ -11,5 +13,8 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+
+ 
 
 }

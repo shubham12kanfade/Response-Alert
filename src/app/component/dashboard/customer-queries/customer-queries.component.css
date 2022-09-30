@@ -1,0 +1,31 @@
+.card{border: none;
+}
+.all_crd{margin: 2rem 5rem 0rem 3rem;}
+.bread_tg a{text-decoration: none; color: rgb(94, 91, 91); border: none;}
+.act_crum{color: #000; font-size: 20px;font-weight: 500;}
+/* search */
+.search{position: relative;border: none; width: 420px; }
+.search input{border: none;text-indent: 25px;/* border: 1px solid #d6d4d4; */background-color: #f1f1f1;font-size: 13px;
+}
+.search .fa-search{position: absolute;top: 9px;left: 16px;}
+/* search */
+
+.cust_al:hover{background-color:#F4FAFF;}
+.cust_al:active{background-color:#F4FAFF;}
+
+    .alrm_1{position: relative;padding: 10px 24px;}
+    .alrm_2{position: relative;}
+    .alrm- p{font-size: 14px;margin: 0 0 3px !important;}
+    .alrm- p span{color: #c4c4c4;}
+    .alrm_1 svg{    color: #FF0000;background-color: #FFE9E9;border-radius: 50%;padding: 9px 10px;height: 40px !important;
+        width: 40px !important;}
+        .alrm_2{ color: #fff;   background-color: #FF0000;border-radius: 50%;padding: 2px 5px;height: 20px !important;width: 20px !important;}
+    .crd-alrm{border: 1px solid #f78880 !important; border-radius: 5px;}
+    .custm_im img{width: 40px;height: 40px;position: relative;margin: 9px 7px;}
+    .custm_txt{line-height: 1px;}
+    .custm_txt h1{font-size: 16px; margin: 0 0 5px !important;}
+    .custm_txt p{color: #b3b2ae;font-size: 13px;}
+    .viw_al button{    text-decoration: none;
+        border: none;
+        background-color: none;
+        background: transparent;}

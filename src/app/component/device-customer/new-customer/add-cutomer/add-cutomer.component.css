@@ -1,0 +1,12 @@
+
+.sign_head h1{font-weight:500;}
+.share{background: transparent;
+    border: none;
+    color: #103759;
+    display: flex;
+    justify-content: center;
+    margin: auto;}
+.cust_im{border: 1px solid rgb(143, 143, 141);border-radius: 6px;padding: 2rem 3rem;} 
+.modal-dialog {width: 460px !important;}   
+
+.inp_txt{padding-left:34px !important;}

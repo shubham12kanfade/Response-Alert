@@ -9,9 +9,11 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 
 
 const routes: Routes = [
-{ path: '',component:ComponentComponent, loadChildren: () => import('./component/component.module').then(m => m.ComponentModule) },
+
+  { path: 'auth', loadChildren: () => import('./component/component.module').then(m => m.ComponentModule) },
+
 {path:'sign-up', component:SignUpComponent},
-{path:'login-page',component:LoginPageComponent},
+{path:'',component:LoginPageComponent},
 {path:'password-recovery',component:PasswordRecoveryComponent},
 {path:'password-successful',component:PasswordSuccessfulComponent},
 {path:'reset-password',component:ResetPasswordComponent}

@@ -18,6 +18,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatButtonModule} from '@angular/material/button';
 import {MatRadioModule} from '@angular/material/radio';
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 
@@ -31,6 +32,7 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
 import { PasswordSuccessfulComponent } from './password-successful/password-successful.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { ForgetPasswordComponent } from './forget-password/forget-password.component';
+import { NgxSliderModule } from '@angular-slider/ngx-slider';
 
 @NgModule({
   declarations: [
@@ -61,7 +63,10 @@ import { ForgetPasswordComponent } from './forget-password/forget-password.compo
     MatInputModule,
     MatFormFieldModule,
     MatButtonModule,
-    MatRadioModule
+    MatRadioModule,
+    MatDialogModule,
+    NgxSliderModule
+
 ,
   ],
   providers: [],
